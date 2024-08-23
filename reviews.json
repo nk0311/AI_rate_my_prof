@@ -1,0 +1,125 @@
+{
+    "reviews": [
+      {
+        "professor": "Dr. John Smith",
+        "subject": "Physics 101",
+        "stars": 4,
+        "review": "Great professor! Explains concepts clearly and is always willing to help."
+      },
+      {
+        "professor": "Dr. Emily Turner",
+        "subject": "Calculus II",
+        "stars": 5,
+        "review": "Excellent lecturer, makes complex topics easy to understand."
+      },
+      {
+        "professor": "Prof. Mark Johnson",
+        "subject": "Introduction to Philosophy",
+        "stars": 3,
+        "review": "Interesting lectures but the grading is tough."
+      },
+      {
+        "professor": "Dr. Laura Williams",
+        "subject": "Biology 201",
+        "stars": 2,
+        "review": "Content is challenging, but the professor isn't very engaging."
+      },
+      {
+        "professor": "Prof. David Lee",
+        "subject": "World History",
+        "stars": 5,
+        "review": "Passionate about the subject and makes classes enjoyable."
+      },
+      {
+        "professor": "Dr. Sarah Thompson",
+        "subject": "Organic Chemistry",
+        "stars": 4,
+        "review": "Difficult course but Dr. Thompson is very supportive."
+      },
+      {
+        "professor": "Prof. James Brown",
+        "subject": "Computer Science 101",
+        "stars": 3,
+        "review": "Good knowledge but lectures are a bit dry."
+      },
+      {
+        "professor": "Dr. Amanda Green",
+        "subject": "English Literature",
+        "stars": 5,
+        "review": "Engaging and insightful, really makes you think about the texts."
+      },
+      {
+        "professor": "Prof. Michael Davis",
+        "subject": "Microeconomics",
+        "stars": 4,
+        "review": "Solid professor, clear lectures and fair exams."
+      },
+      {
+        "professor": "Dr. Jessica Clark",
+        "subject": "Psychology 101",
+        "stars": 2,
+        "review": "Not very organized, hard to follow the lectures."
+      },
+      {
+        "professor": "Prof. Robert Wilson",
+        "subject": "Sociology 102",
+        "stars": 3,
+        "review": "Interesting topics, but the assignments are overwhelming."
+      },
+      {
+        "professor": "Dr. Nancy Miller",
+        "subject": "Political Science",
+        "stars": 5,
+        "review": "Amazing professor, very knowledgeable and engaging."
+      },
+      {
+        "professor": "Prof. Kevin Lewis",
+        "subject": "Statistics 101",
+        "stars": 4,
+        "review": "Challenging but rewarding course with a great professor."
+      },
+      {
+        "professor": "Dr. Steven White",
+        "subject": "Environmental Science",
+        "stars": 3,
+        "review": "Interesting material, but could be more engaging."
+      },
+      {
+        "professor": "Prof. Alice Brown",
+        "subject": "Art History",
+        "stars": 5,
+        "review": "Very passionate about art, makes the class enjoyable."
+      },
+      {
+        "professor": "Dr. William Martinez",
+        "subject": "Business Ethics",
+        "stars": 4,
+        "review": "Great class with lots of real-world examples."
+      },
+      {
+        "professor": "Prof. Karen Taylor",
+        "subject": "Intro to Anthropology",
+        "stars": 2,
+        "review": "Lectures are a bit boring, and the exams are tough."
+      },
+      {
+        "professor": "Dr. Richard Adams",
+        "subject": "Advanced Calculus",
+        "stars": 5,
+        "review": "Highly knowledgeable, clear explanations, and fair exams."
+      },
+      {
+        "professor": "Prof. Jennifer Scott",
+        "subject": "Introduction to Sociology",
+        "stars": 3,
+        "review": "Good professor but the course is quite dense."
+      },
+      {
+        "professor": "Dr. Thomas Harris",
+        "subject": "Molecular Biology",
+        "stars": 4,
+        "review": "Challenging material, but Dr. Harris is very helpful."
+      }
+    ]
+  }
+  
