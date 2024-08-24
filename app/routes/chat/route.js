@@ -69,5 +69,57 @@ export async function POST(req){
         encoding_format: 'float',
     })
 
-    const results = await index.query
+    const results = await index.query ({
+        topK: 3, 
+        includeMetadata: true,
+        vector: embedding.data[0].embedding
+    })
+
+    let resultString = 
+      '\n\nReturned results from vector db (done automatically):'
+    results.matches.forEach((match) =>{
+        resultString+=`\n
+        Professor: ${match.id}
+        Review: ${match.metadata.stars}
+        Subject: ${match.metadata.subject}
+        Stars ${match.metadata.stars}
+        \n\n
+        `
+    })
+
+    const lastMessage = data[data.length - 1]
+    const lastMessageContent = lastMessage.content + resultString
+    const lastDataWithoutLastMessage = data.slice(0, data.length -1)
+    const completion = await opeanai.chat.completions.create({
+        messages: [
+            {role: 'system', content: systemPrompt},
+            ...lastDataWithoutLastMessage,
+            {role: 'user', content: lastMessageContent},
+        ],
+        model: 'gpt-4o-mini',
+        stream: true,
+    })
+
+    const stream = ReadableStream({
+        async start(controller){
+            const encoder = new TextEncoder()
+            try{
+                for await (const chunk of completion){
+                    const content = chunk.choices[0]?.delta?.content
+                    if (content){
+                        const text= encoder.encode(content)
+                        controller.enqueue(text)
+                    }
+                }
+            } catch (err) {
+              controller.error(err)
+            } finally {
+              controller.close()
+            }
+        },
+    })
+
+    return new NextResponse(stream)
+
+
 }
